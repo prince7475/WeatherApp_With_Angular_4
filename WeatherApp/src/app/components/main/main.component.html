@@ -1,0 +1,52 @@
+<div class="row">
+  <div class="col s12 m6 l3">
+    <div class="card">
+      <div class="card-image">
+        <img src="https://www.catster.com/wp-content/uploads/2018/05/A-gray-cat-crying-looking-upset.jpg" alt="">
+        <span class="card-title">Card Title</span>
+      </div>
+
+      <div class="card-content">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, laborum molestias est odio quibusdam doloribus dolor sed aspernatur ut pariatur. Fugit placeat voluptates nam blanditiis nesciunt exercitationem doloremque nulla! Asperiores?</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="row">
+  <div class="col s12 m6 l3">
+    <div class="card">
+      <div class="card-image waves-effect waves-block waves-light">
+        <img class="activator" src="https://www.catster.com/wp-content/uploads/2018/05/A-gray-cat-crying-looking-upset.jpg">
+      </div>
+      <div class="card-content">
+        <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">...</i></span>
+      </div>
+      <div class="card-reveal">
+        <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">x</i></span>
+        <p>Here is some more information about this product that is only revealed once clicked on.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+<div *ngFor="let picture of pictures">
+    <div class="col s12 m6 l3">
+        <div class="card">
+          <div class="card-image">
+            <img [src]="picture.thumbnailUrl" alt="">
+            <span class="card-title">Card Title</span>
+          </div>
+    
+          <div class="card-content">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, laborum molestias est odio quibusdam doloribus dolor sed aspernatur ut pariatur. Fugit placeat voluptates nam blanditiis nesciunt exercitationem doloremque nulla! Asperiores?</p>
+          </div>
+        </div>
+        </div>
+  </div>
+</div>
+
+<p *ngFor="let picture of pictures">{{picture.id}}</p>
+      
